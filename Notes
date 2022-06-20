@@ -1,0 +1,92 @@
+https://www.ap.com/analyzers-accessories/interfaces-modules/pdm-16-input-module-apx-series-audio-analyzers/
+
+https://invensense.tdk.com/smartsound/digital/
+
+
+https://beagleboard.org/p/dinux/16-microphone-array-using-pocketbeagle-63b814
+
+https://www.mouser.pl/new/texas-instruments/ti-tlv320adcx140-adcs/
+
+https://audioprecision.pl
+
+https://electronics.stackexchange.com/questions/521799/how-can-i-convert-an-audio-pdm-bitstream-into-analog-form
+
+Intel
+https://github.com/IntelRealSense/librealsense/tree/master/wrappers/opencv
+
+https://docs.opencv.org/3.4/d7/d9f/tutorial_linux_install.html
+
+https://github.com/IntelRealSense/librealsense/blob/master/wrappers/opencv/readme.md#linux
+https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
+----***----***----
+Według tego to było zrobione
+https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
+
+https://robots.uc3m.es/installation-guides/install-realsense2.html
+
+librealsense for Python installation
+https://github.com/IntelRealSense/librealsense/tree/master/wrappers/python#building-from-source
+
+
+git clone https://github.com/IntelRealSense/librealsense.git
+cmake -DBUILD_EXAMPLES=true -DBUILD_CV_EXAMPLES=true -DBUILD_PYTHON_BINDINGS:bool=true
+
+Kiedy można dodać bindingsy do Pythona to użyć tej flagi:
+cmake -DBUILD_EXAMPLES=true -DBUILD_CV_EXAMPLES=true -DBUILD_PYTHON_BINDINGS:bool=true
+ sudo make -j8
+sudo make install
+
+
+ sudo make install
+ 
+ Wyskakuje błąd z brakiem biblioteki libusb - to trzeba ją doinstalować. 
+Można to zrobić na początku zapewne.
+ apt-cache search libusb
+ 
+ sudo apt install libusb-1.0-0-dev
+ 
+ Real sense show
+ https://github.com/IntelRealSense/librealsense/blob/master/wrappers/opencv/imshow/rs-imshow.cpp
+ 
+https://github.com/IntelRealSense/librealsense/issues/3062
+
+# py libs (pyd/so) should be copied to pyrealsense2 folder
+
+https://github.com/IntelRealSense/librealsense/blob/master/wrappers/opencv/imshow/rs-imshow.cpp
+
+Run Intel Realsense permissions script from librealsense root directory:
+./scripts/setup_udev_rules.sh
+
+
+https://stackoverflow.com/questions/62134563/how-to-give-permission-to-intel-realsense-camera-on-ubuntu
+
+/usr/local/lib usr/local/bin /usr/local/include
+
+https://community.intel.com/t5/Items-with-no-label/D435-can-t-reach-60FPS-with-PyRealsense2/td-p/634239
+https://community.intel.com/t5/Items-with-no-label/D435-can-t-reach-60FPS-with-PyRealsense2/td-p/634239
+
+>>> import sys
+>>> print(sys.path)
+
+cd ~/Instalacyjne/librealsense/
+
+https://stackoverflow.com/questions/135035/python-library-path
+
+~/Instalacyjne/librealsense/wrappers/python$
+
+% Writing video from realsense with OpenCV
+https://github.com/IntelRealSense/librealsense/issues/2731#issuecomment-529938267
+https://github.com/IntelRealSense/librealsense/issues/2731#issuecomment-529938267
+
+https://answers.opencv.org/question/229381/is-it-possible-for-opencv-to-save-16-bits-single-channel-video/
+
+% Depth aligned
+https://dev.intelrealsense.com/docs/rs-align
+
+https://dev.intelrealsense.com/docs/opencv-wrapper#section-1-minimal-opencv-application-for-visualizing-depth-data
+ 
+ https://stackoverflow.com/questions/51791560/is-ther-a-way-to-get-16bit-image-from-opencv-videocapture
+ https://stackoverflow.com/questions/51791560/is-ther-a-way-to-get-16bit-image-from-opencv-videocapture
+ 
+ https://flir.custhelp.com/app/answers/detail/a_id/3387/~/boson-video-and-image-capture-using-opencv-16-bit-y16/session/L2F2LzEvdGltZS8xNTkxNzk5OTQwL2dlbi8xNTkxNzk5OTQwL3NpZC9mVW15VlhkTVpMVE5YcEVvT0dnc20lN0VIN0F6X0ZhV0ZEWjJqT0VtZFgyeDczOWpXV1RvVUNRZXQ3UmdabHJidjVXZDhEaEF1SjVPa2h6OEZOdThVRVNJT2JsclFGenpoNGQ0R2NoZ0xiaGx4TFdFN1czbHdnZzk4USUyMSUyMQ==
+
